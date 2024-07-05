@@ -11,6 +11,7 @@ main {
  article {
   flex: 2;
   overflow-y: auto;
+  text-transform:capitalize;
 }
 aside {
     flex: 1;
@@ -35,11 +36,12 @@ footer a {
 
 a {
     color: #3a5ff2;
-
+  
 }
 
 span {
     color: #3a5ff2;;
+   
 }
 
 h1 {
@@ -71,9 +73,47 @@ th {
     font-weight: bold;         
 }
 
-
+:root {
+  --my-color:#4842f5;
+}
 .logo {
     font-size: 2em;
-    color: #4842f5;
+    color: var(--my-color);
     margin-right: 20px; /* Space between logo and other nav items */
+    font-style:initial;
 }
+
+img {
+   
+    box-shadow: 10px 5px 10px 5px #4d5a66;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    width: auto;
+  
+
+}
+caption {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+p::first-letter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3a5ff2;
+  }
+  
+  h1 + p::first-letter {
+    color: #3a5ff2;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 3px 5px 10px 3px #3a5ff2;
+    font-size: 250%;
+    padding: 6px 3px;
+    margin-right: 6px;
+    float: left;}
+  
+
+    
+   
