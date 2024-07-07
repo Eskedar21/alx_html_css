@@ -104,7 +104,7 @@ header nav ul li a:hover {
     display: flex; /* Enables flexbox layout */
     justify-content: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
-    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+   
     gap: 125px; /* Adds space between the items */
     height: 50vh; /* Example height to center vertically within the viewport */
 }
@@ -132,7 +132,7 @@ header nav ul li a:hover {
     align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #c371ff;
-    margin: 50px 0 50px 0;
+    margin: 50px 0 0 0;
     height: 392px;
 }
 .quote-txt {
@@ -161,20 +161,22 @@ header nav ul li a:hover {
 .tutorials {
     width: 1228px;
     height: 450;
-    margin: 60px auto 0 auto;
+    margin: 80px auto 0 auto;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
-    gap: 60px;
+    gap: 10px;
 
 }
 
 #video {
     display: flex;
-    padding-top: auto;
-    gap: 30px;
+    justify-content: space-around;
+    margin: 60px auto;
+    padding-top: 10px;
+   
 
 }
 
@@ -188,6 +190,7 @@ header nav ul li a:hover {
     position: relative;
     width: 255px;  
     height: 154px; 
+    
 }
 
 .play-button {
@@ -216,7 +219,17 @@ header nav ul li a:hover {
 .small {
     height: 30px;
     width: 30px;
+   }
+.tutorials h4 {
    
+    font-size: 14;
+    font-weight:bold;
+    color: #dd91ff;
+     margin-left: -0.2px;
+    margin-top: 8px;
+    padding-left: auto;
+    line-height: 1.2;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #inline {
@@ -224,41 +237,106 @@ header nav ul li a:hover {
     flex-direction: row;
     gap: 10px;
 }
-.tutorials h4 {
-   
-    font-size: 14;
-    font-weight:bold;
-    color: #dd91ff;
-    margin-left: -0.2px;
-    margin-top: 8px;
-    padding-left: auto;
-    line-height: 1.2;
-    font-family: 'Source Sans Pro', sans-serif;
-    
-}
-#in {
+#inline-2 {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+#inline-3 {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+#inline-4 {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;}
+        
+
+
+#in {
+    display:inline-block;
+    
     
 }
+    
+
+/*
+
+#in-2 {
+    display: flex;
+    flex-direction: row;
+}
+#in-3 {
+    display: flex;
+    flex-direction: row;}
+ #in-4 {
+        display: flex;
+        flex-direction: row;}
  #in p {
     font-size: 14;
     font-weight:bold;
     color: #dd91ff;
- 
+    margin-left: 85px;
     margin-top: auto;
     padding-left: auto;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;}
+
+    #in-2 p {
+        font-size: 14;
+        font-weight:bold;
+        color: #dd91ff;
+        margin-left: 85px;
+        margin-top: auto;
+        padding-left: auto;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    #in-3 p {
+        font-size: 14;
+        font-weight:bold;
+        color: #dd91ff;
+        margin-left: 85px;
+        margin-top: auto;
+        padding-left: auto;
+        font-family: 'Source Sans Pro', sans-serif;}
     
     
+        #in-4 p {
+            font-size: 14;
+            font-weight:bold;
+            color: #dd91ff;
+            margin-left: 85px;
+            margin-top: auto;
+            padding-left: auto;
+            font-family: 'Source Sans Pro', sans-serif;}
     
-    
- }
+ 
 #in img {
     height: 15px;
     width: 107px;
 
 }
+#in-2 img {
+    height: 15px;
+    width: 107px;
+
+}
+#in-3 img {
+    height: 15px;
+    width: 107px;
+
+}
+#in-4 img {
+    height: 15px;
+    width: 107px;
+
+}*/
+
+
+
 
 .membership {
     display: flex;
@@ -267,38 +345,130 @@ header nav ul li a:hover {
     align-items: center;
     font-family: 'Source Sans Pro', sans-serif;
     background-color: #081628;
-    margin: auto;
+    margin: 25px;
+    padding: 25px;
     background-position:100%; 
     height: 502px;
-    
     color: #fff;
+  
 }
    
- .free {
-    display: flex;
-    flex-direction: row;
-    padding-top: auto;
-    margin-top: auto;
-    
-
- }   
- #padding{
-    font-size: 32;
-    margin: auto;
-    padding-top: auto;
-
- }
-
-
- .foot {
+ #free {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding-top: auto;
+    gap: 30px;
+
+
+ }   
+#btn {
+    background-color: #c470ff; /* Example background color */
+    color: white; /* Text color */
+    margin-top: 20px;
+    padding: 10px 20px; /* Padding for size */
+    border: none; /* Remove default border */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; 
+    display: flex; 
+align-self: center;
+               }
+.smile {
+    height: 153px;
+    width: 257px;
+}
+.smile h3 {
+    font-size: 18;
+    font-weight: bold;
+    height: 26px;
+    width: 256px;
+   
+}
+.smile p {
+    font-size: 14;
+    font-weight: lighter;
+    height: 52px;
+    width: 212px;
+}
+       
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 707px;
+    width: 920px;
+    margin: 5px auto;
+    padding: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.FAQ {
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 5px auto;
+    
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.faq h2 {
+   font-size: 60px;
+   font-family: 'Source Sans Pro', sans-serif;
+   
+
+}
+.faq h3 {
+    font-size: 16;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+ 
+.p {
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+   
+ .foot {
+    
     background-color: #081628;
     height: 249px;
-    margin: auto;
+    
+    
+ }
+ #left {
+    display: flex;
+  justify-content:left;
+   padding-top: 100px;
+   padding-bottom: 5px;
+   padding-left: 220px;
+    
+ }
+ #right {
+   display: flex;
+   justify-content:right;
+   padding-right: 220px;
+   position: relative;
+   bottom: 40px;
+   gap: 12px;
+   
+ 
  }
 
- .foot p {
-    color: #fff;
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: lighter;
+   color:#5e697a;
+ 
  }
