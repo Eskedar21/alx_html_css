@@ -22,8 +22,18 @@ img {
 
 /* ------------------ Header -------------------------------------- */
 
+[type="checkbox"] {
+    display: none;
+}
+    label {
+        visibility: hidden;
+    }
+    
+       
+    
 
 header {
+   
     position: absolute;
     left: 0;
     right: 0;
@@ -59,24 +69,79 @@ nav a {
     font-size: 1.2rem;
     font-weight: bold;
     color: #FFFFFF;
+
 }
 nav a:hover {
     color: #FF6565;
 }
 
-@media screen and (max-width:48rem){
+    @media screen and (max-width: 48rem) {
+        header {
+            padding: 0 4em;
+        }
+       nav {
+        max-width:9.5em;
+        max-height: 10em;
+       }
+        label {
+            visibility: visible;
+            cursor: pointer;
+            padding-top: 1.5rem;
+            float: left;
+            position: relative;
+            top: 2em;
+            left: 0.2m;
+            right: 4em;
+            margin: 0;
+            display: block;
+           
+        }
     
-    header {
+        label::after {
+            content: '\00D7'; 
+            font-size: 2rem;
+            color: #333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            visibility: hidden;
+        }
+    
+        nav ul {
+            overflow: hidden;
+            visibility:hidden;
+            opacity: 0;
+
+            * {
+                opacity: 0;
+            }
+            
+        }
        
-        padding: 0 4em; 
-    }
-    nav a {
-        font-size: 0.8em;
-       padding-left: 3.52em;
-    }
+        
 
-}
 
+    [type="checkbox"]:checked  + label + img + nav ul{ 
+          
+            visibility: visible;
+            font-size: 0.01rem;
+            font-weight: lighter;
+            padding-left: 3.52em;
+            opacity: 1;
+            * {
+                opacity: 1;
+            }
+          
+        } 
+        [type="checkbox"]:checked + label {
+            visibility: hidden;
+         }
+        
+        [type="checkbox"]:checked + label::after {
+            visibility: visible;
+         }
+    }
 
 /* ------------------ home-hero -------------------------------------- */
 
@@ -104,7 +169,7 @@ nav a:hover {
     color: #FFFFFF;
      width: 100%;
      max-width: 45.75rem;
-    
+   
     
    
 }
@@ -120,22 +185,20 @@ nav a:hover {
    
 }
 
-.container-close {
-    margin-bottom: .1em;
-}
+
 .container-lighter {
     font-weight: 50;
-    max-width: 50em;
-    max-height:initial;
+    max-width: 400em;
+    max-height: 100em;
     line-height: 2rem;
     margin: 0 auto;          
     padding: 0 1.25rem;  
     font-size: 0.2em;
-    
-   
- 
-
 }
+ .container-upper {
+
+    line-height: 0.5rem;
+ }
 
 
 .container button {
@@ -161,22 +224,28 @@ nav a:hover {
         max-height: 60vh;
      }
      .container h1 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         padding-bottom: 0%;
         max-width: 150em;
      }
      
      .container-close {
-        font-size: .7em;
+        font-size: 0.8rem;
         padding: 0 1em;
-        max-width: 50em;
         
       }
      .container-lighter {
-        font-size: 1em;
+        font-size: 10rem;
+        padding:0;
+        margin: 0%;
+         width: 21.95rem;
        
         
     
     }
     
-}
+
+    .container-upper {
+        line-height: 1.1rem;
+       }
+    }
