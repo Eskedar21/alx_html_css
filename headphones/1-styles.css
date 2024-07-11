@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ------------------ general-------------------------------------- */
+
+/* ------------------ services -------------------------------------- */
+
+
+.service-dscription {
+   max-width: 44rem;
+    font-weight: 50;
+    line-height: 2rem;
+    margin: 5em auto;          
+    padding: 2rem .5em;  
+    font-size: 0.2rem;
+    width: 100%;
+}
+
+
+.service-dscription h1 {
+    font-size: 2rem;
+}
+
+.service-dscription p {
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width:48rem){
+     .service-dscription {
+        width: 95%;
+        padding: 0 1rem;
+        overflow: auto; 
+        max-height: 60vh;
+       
+     }
+
+     .service-dscription p {
+        padding-top: 2em ;
+    }
+}
+
+/* ------------------ show -------------------------------------- */
+
+
+.service-show {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 3em;
+ margin: 5em auto;
+ max-width: fit-content;
+ 
+
+}
+
+.sound-frecuency-icon {
+    font-size: 50px;
+   
+}
+
+.service-show i {
+   max-width: 100%;
+   height: auto;
+   font-size: 70px;
+  
+}
+
+.service-show h2 {
+   font-size: 1.12rem;
+}
+
+.service-show p {
+    font-size: 0.875rem;
+    font-weight: 50;
+}
+
+.icon-sound-frecuency {
+    width: 12.94rem;
+    height: 11.25rem;
+    
+   
+}
+.video-icon {
+    width: 12.94rem;
+    height: 11.25rem;
+   
+}
+
+.music-icon {
+    width: 12.94rem;
+    height: 11.25rem;
+   
+}
+.hearing-icon {
+    width: 12.94rem;
+    height: 11.25rem;
+    
+}
+
+@media screen and (max-width:48rem) {
+    .service-show {
+        max-width: 50%;
+    }
+    
+}
+    
