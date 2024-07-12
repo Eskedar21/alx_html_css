@@ -1,0 +1,76 @@
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+body {
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+}
+
+
+.testimonials {
+  background-image: url(assets/headphones_hero_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+    padding: 5em 0;
+ 
+   overflow: auto;
+    width: 100%; /* Ensures the container takes up the full width */
+        
+     
+       
+    
+
+}
+
+
+.testimonials h1 {
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    top: 0.2rem;
+    left: auto;
+    right: auto;
+}
+
+.testimonials p {
+    font-size: 1rem;
+   color: white;
+   max-width: 44rem;
+    font-weight: 50;
+    line-height: 2rem;
+    margin: 3em auto;          
+    padding: .5rem .5em;  
+    width: 100%;
+}
+
+
+.testimonials-diagram {
+    display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 5em;
+ margin: 1em auto 3em auto;
+ overflow: auto;
+
+}
+
+@media screen and (max-width:48rem) {
+    .testimonials {
+        height: 1500px; 
+        overflow: unset;
+      }
+     
+      .testimonials-diagram{
+        max-height: fit-content;
+        gap: 3.5em;
+      }
+
+}

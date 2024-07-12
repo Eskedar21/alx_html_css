@@ -78,6 +78,8 @@ nav a:hover {
     @media screen and (max-width: 48rem) {
         header {
             padding: 0 4em;
+            border: solid red;
+            height: 2rem;
         }
        nav {
         max-width:9.5em;
@@ -170,6 +172,8 @@ nav a:hover {
     color: #FFFFFF;
      width: 100%;
      max-width: 45.75rem;
+     
+    
    
     
    
@@ -218,11 +222,16 @@ nav a:hover {
 }
 
 @media screen and (max-width:48rem) {
-     .container {
+    
+    .home-hero {
+        height: 869px;
+    }
+    
+    .container {
         width: 95%;
         padding: 0 1rem;
-        overflow: auto; 
-        max-height: 60vh;
+        
+        max-height: 80vh;
      }
      .container h1 {
         font-size: 1.7rem;

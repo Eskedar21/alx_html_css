@@ -50,8 +50,8 @@
  flex-wrap: wrap;
  justify-content: center;
  align-items: center;
- gap: 3em;
- margin: 5em auto;
+ gap: 5em;
+ margin: 1em auto 3em auto;
  max-width: fit-content;
  
 
