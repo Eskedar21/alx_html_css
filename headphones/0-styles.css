@@ -78,7 +78,6 @@ nav a:hover {
     @media screen and (max-width: 48rem) {
         header {
             padding: 0 4em;
-            border: solid red;
             height: 2rem;
         }
        nav {
